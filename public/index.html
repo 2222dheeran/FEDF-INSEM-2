@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React Tasks (JSON file backend)</title>
+    <style>
+      body { font-family: Arial, sans-serif; padding: 20px; max-width: 800px; margin: auto; }
+      .task { display:flex; align-items:center; justify-content:space-between; padding:8px; border-bottom:1px solid #eee }
+      .task-title { flex:1; margin-left:8px }
+      .completed { text-decoration: line-through; color:#888 }
+      button { margin-left:8px }
+      form { margin-bottom: 16px }
+      input[type="text"] { padding:6px; width:60% }
+    </style>
+  </head>
+  <body>
+    <h1>Tasks</h1>
+
+    <div id="root"></div>
+
+    <!-- React and Babel (for small demo only) -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.26.0/babel.min.js"></script>
+    <script type="text/babel" src="/app.js"></script>
+  </body>
+</html>
